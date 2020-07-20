@@ -1,0 +1,26 @@
+
+nav{
+    background-color:white;
+    color:hsl(209, 23%, 22%);
+    box-shadow: 5px 5px rgb(236, 234, 234);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    overflow: hidden;
+    z-index:1;
+    width:100%;
+    
+}
+
+h1{
+    font-size:1.5em;
+}
+#nav-flex{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.myContainer{
+    width:90%;
+    margin:0 auto;
+    overflow:hidden;
+}

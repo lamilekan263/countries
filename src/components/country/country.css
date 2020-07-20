@@ -1,0 +1,16 @@
+.myImage{
+    width:100%;
+    height: initial;
+    
+}
+
+.country-details{
+    padding:20px;
+    color:hsl(209, 23%, 22%);
+}
+h2{
+    margin-bottom:20px;
+    font-size:1.4em;
+    font-weight:bold;
+    text-transform:uppercase;
+}
