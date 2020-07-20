@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import NavBar from './components/Navbar/navBar.component'
 import CountryList from './components/country-list/country-list.component'
+import MyForm from './components/form.component/form.component'
 
 class App extends Component {
   constructor(){
@@ -24,8 +25,8 @@ class App extends Component {
     return (  
       <div>
         <NavBar  />
-
-        <CountryList countries = {countries} />
+        <MyForm/>
+          <CountryList countries = {countries} />
 
         
       </div>

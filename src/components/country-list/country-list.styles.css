@@ -1,29 +1,14 @@
-.country-card{
-    width:90%;
-    background-color:hsl(0, 0%, 98%);
-    box-shadow:5px 5px rgb(236, 234, 234);
-    color:hsl(0, 0%, 52%);
-    border-radius: 15px;
-    margin:20px auto;
-    
-}
+
 .country-list{
-    position: absolute;
-    top:70px;
+    padding:0% 7%;
+    margin:150px 0 20px;
+   
     
 }
-@media(min-width:740px){
-   .country-card{
-       width:25%;
-       height:450px;
-       overflow:hidden;
-   } 
-   .country-list{
-    margin-top:50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
+@media(min-width:750px){
+    .flex-country{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
 }

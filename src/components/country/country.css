@@ -1,16 +1,38 @@
-.myImage{
-    width:100%;
-    height: initial;
-    
+img{
+    max-height:200px;
+    max-width:100%;
 }
-
 .country-details{
     padding:20px;
     color:hsl(209, 23%, 22%);
 }
-h2{
-    margin-bottom:20px;
-    font-size:1.4em;
+
+.card-title{
+    
+    font-size:1em;
     font-weight:bold;
     text-transform:uppercase;
+}
+.card-text{
+    margin-bottom:0.7rem;
+}
+.country-card{
+    background-color:hsl(0, 0%, 98%);
+    box-shadow:5px 5px rgb(236, 234, 234);
+    color:hsl(0, 0%, 52%);
+    border-radius: 15px;
+    width:100%;
+    margin:20px 0px;
+}
+
+@media(min-width:750px){
+    .country-card{
+        width:300px;
+    }
+}
+
+@media(min-width:1000px){
+    .country-card{
+        width:370px;
+    }
 }
