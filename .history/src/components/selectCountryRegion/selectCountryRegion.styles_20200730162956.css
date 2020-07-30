@@ -1,0 +1,9 @@
+select{
+    padding: 12px 40px;  
+    border: none;
+    background-color: #fff;
+    box-shadow:5px 5px rgb(236, 234, 234);
+}
+select ::after{
+    padding:10px;
+}

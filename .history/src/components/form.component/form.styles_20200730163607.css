@@ -1,0 +1,14 @@
+.myForm{
+    position: relative;
+    top:30;
+    left:10;
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+}
+
+button{
+    margin:10px 0;
+    
+    padding:10px;
+}

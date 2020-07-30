@@ -1,0 +1,20 @@
+input{
+    width:100%;
+    border:none;
+    box-shadow:5px 5px rgb(236, 234, 234);
+    padding: 12px 40px;  
+     
+    display: inline-block;  
+    border: 1px solid #ccc;  
+    box-sizing: border-box; 
+}
+input :active{  
+    border: 1px solid red; 
+    
+}
+i{ 
+    position: absolute; 
+    left: 15px; 
+    top: 25px; 
+    color: gray; 
+} 
