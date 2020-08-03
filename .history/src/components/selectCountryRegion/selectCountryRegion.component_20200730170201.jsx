@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 
 import './selectCountryRegion.styles.css'
 
 const SelectDropDownByRegion = () =>{
-    
 
     return(
         <div>

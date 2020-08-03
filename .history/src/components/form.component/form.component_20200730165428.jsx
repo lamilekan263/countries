@@ -22,7 +22,7 @@ const MyForm =props =>{
                     <Input onHandleChange={props.handleChange}/>
                     <button>Search For your desire country</button>
                  </div>
-                <SelectDropDownByRegion />
+                    
                     
             </form>
 

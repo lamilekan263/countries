@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 
 import './selectCountryRegion.styles.css'
 
 const SelectDropDownByRegion = () =>{
-    
+    useEffect( fetch('https://restcountries.eu/rest/v2/all')
+    .then(response => response.json())
+    .then(countries => console.log(countries))
+     
+        setData(result.data);
+      });
 
     return(
         <div>
