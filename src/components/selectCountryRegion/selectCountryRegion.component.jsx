@@ -1,37 +1,58 @@
-import React, {Component} from 'react';
+import React,{ useContext} from 'react'
 
-import './selectCountryRegion.styles.css'
+import { CountryContext } from "../../context/country";
 
-class SelectDropDownByRegion extends Component {
-    constructor(){
-        super();
+const SelectCountryRegion = () => {
+  
+  const { changeRegion } = useContext(CountryContext);
 
-        this.state = {
-            filter : ''
-        }
+  
+     return (
+      <div>
+        {" "}
+         <select name="Filter by Region" onChange={(e) => {
+           changeRegion(e.target.value);
+         }}>
+           <option value="">Filter</option>
+           <option value="Africa">Africa</option>
+           <option value="Americas">Americas</option>
+           <option value="Asia">Asia</option>
+           <option value="Europe">Europe</option>
+           <option value="Oceania">Oceania</option>
+          {" "}
+        </select>
+        {" "}
+      </div>
+    );
+}
 
-       onchange = (e) =>{
-            this.setState({ filter : e.target.value})
-            console.log(this.state.filter)
-       }
-    }
+export default SelectCountryRegion
+
+
+// import React, {Component} from 'react';
+
+// import './selectCountryRegion.styles.css'
+
+
+
+
+// class SelectDropDownByRegion extends Component {
+//     constructor(){
+//         super();
+
+//         this.state = {
+//             filter : ''
+//         }
+
+//       
      
-    render(){
-        return(
-            <div>
-                <select name="Filter by Region" onChange = {this.onchange}>
-                                <option value="">Filter</option>
-                                <option value="Africa">Africa</option>
-                                <option value="Americas">Americas</option>
-                                <option value="Asia">Asia</option>
-                                <option value="Europe">Europe</option>
-                                <option value="Oceania">Oceania</option>
-                </select>
-            </div>
-        )
-}
+//     render(){
+//         return(
+//            
+//         )
+// }
 
-}
+// }
 
 
-export default SelectDropDownByRegion
+// export default SelectDropDownByRegion

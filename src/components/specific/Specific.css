@@ -1,0 +1,62 @@
+.specific__container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.specific h5{
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.specific span{
+    font-weight: lighter;
+}
+.specific__button{
+    margin: 20px 0 ;
+}
+.specific__button button{
+    padding:15px;
+}
+
+.specific__country_details{
+    margin: 40px 0;
+}
+.specific__country_flag img{
+    width: 100%;
+    height: 100%;
+    
+}
+.specific__country_heading{
+    margin: 15px 0;
+}
+.details__container{
+    margin: 25px 0;
+}
+.languages{
+    display: inline-block;
+    margin-left: 5px;
+}
+.details__three{
+    margin:25px 0;
+}
+.border__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media(min-width:766px){
+    .specific__country{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: max-content;
+
+    }
+    .details{
+        display: flex;
+        height: max-content;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

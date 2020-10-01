@@ -1,53 +1,27 @@
-import React, {Component} from 'react';
-import NavBar from './components/Navbar/navBar.component'
-import CountryList from './components/country-list/country-list.component'
-import MyForm from './components/form.component/form.component'
+import React from 'react'
 
-import axios from 'axios'
 
-class App extends Component {
-  constructor(){
-    super();
-    this.state={
-      countries :[
+import Home from './views/Home'
+import Nav from './components/Navbar/navBar.component'
 
-        
-      ],
-      searchValue : ''
-      
-      }
-  }
-    componentDidMount(){
-    // fetch('https://restcountries.eu/rest/v2/all')
-    // .then(response => response.json())
-    // .then(countries => console.log(countries))
+import CountryContextProvider from "./context/country";
 
-    axios.get('https://restcountries.eu/rest/v2/all')
-    .then(res =>{
-      console.log(res)
-      this.setState({countries : res.data.slice(0,9)})
-    })
-  }
+import { Switch, Route } from 'react-router-dom';
+import Specific from './components/specific/Specific';
 
-  handleCountry = e =>{
-    this.setState({searchValue : e.target.value})
-    console.log(e)
-    
-  }
- 
-  render() { 
-    const {countries, searchValue} = this.state
-    const filteredCountries = countries.filter(country => country.name.toLowerCase().includes(searchValue.toLowerCase()))
-    return (  
-      <div>
-        <NavBar  />
-        <MyForm handleChange ={this.handleCountry}/>
-          <CountryList countries = {filteredCountries} />
-
-        
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <CountryContextProvider>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/country/:country" component={Specific} />
+        </Switch>
+      </CountryContextProvider>
+    </div>
+  );
 }
- 
-export default App;
+
+export default App
+
