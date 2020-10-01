@@ -8,7 +8,7 @@ class CountryContextProvider extends Component {
     super(props);
     this.state = {
       countries: [],
-      searchValue: "",
+      filteredCountry : ''
     };
   }
 
@@ -24,14 +24,40 @@ class CountryContextProvider extends Component {
     Axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
       .then((res) => this.setState({ countries: res.data }))
       .catch((err) => console.log(err.message));
-  filterCountry = () => {};
+  
+  
+
+      // filter the countries according to user input 
+  filterCountry = (countryName) => {
+    // const filter = countryName[0]
+    //   .toUpperCase()
+    //   .countryName.slice(1)
+    //   .toLowerCase();
+    //   console.log(filter)
+    if (countryName) {
+      const filter = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
+      this.setState({ filteredCountry: filter });
+      Axios.get(
+        `https://restcountries.eu/rest/v2/name/${filter}`
+      ).then((res) => {
+        const positive = res.data.filter(country => country.name.startsWith(this.state.filteredCountry));
+        this.setState({ countries: positive });
+      });
+
+    }else{
+      return;
+    }
+    
+    // const filteredCountries = countries.filter(country => country.name.toLowerCase().includes(searchValue.toLowerCase()))
+
+  };
 
   render() {
     // const {countries, searchValue} = this.state
-    // const filteredCountries = countries.filter(country => country.name.toLowerCase().includes(searchValue.toLowerCase()))
+    // 
     return (
       <CountryContext.Provider
-        value={{ ...this.state, changeRegion: this.changeRegion }}
+        value={{ ...this.state, changeRegion: this.changeRegion, filterCountry : this.filterCountry }}
       >
         {this.props.children}
       </CountryContext.Provider>
