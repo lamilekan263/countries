@@ -1,5 +1,6 @@
 import React,{ useContext} from 'react'
 
+import './selectCountryRegion.styles.css'
 import { CountryContext } from "../../context/country";
 
 const SelectCountryRegion = () => {
@@ -8,7 +9,7 @@ const SelectCountryRegion = () => {
 
   
      return (
-      <div>
+      <div className='selectButton'>
         {" "}
          <select name="Filter by Region" onChange={(e) => {
            changeRegion(e.target.value);
