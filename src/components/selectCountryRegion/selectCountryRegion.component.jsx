@@ -27,32 +27,3 @@ const SelectCountryRegion = () => {
 }
 
 export default SelectCountryRegion
-
-
-// import React, {Component} from 'react';
-
-// import './selectCountryRegion.styles.css'
-
-
-
-
-// class SelectDropDownByRegion extends Component {
-//     constructor(){
-//         super();
-
-//         this.state = {
-//             filter : ''
-//         }
-
-//       
-     
-//     render(){
-//         return(
-//            
-//         )
-// }
-
-// }
-
-
-// export default SelectDropDownByRegion

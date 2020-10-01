@@ -24,14 +24,14 @@ class CountryContextProvider extends Component {
     Axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
       .then((res) => this.setState({ countries: res.data }))
       .catch((err) => console.log(err.message));
-  
-  
+  filterCountry = () => {};
+
   render() {
     // const {countries, searchValue} = this.state
     // const filteredCountries = countries.filter(country => country.name.toLowerCase().includes(searchValue.toLowerCase()))
     return (
       <CountryContext.Provider
-        value={{ ...this.state, changeRegion: this.changeFilter }}
+        value={{ ...this.state, changeRegion: this.changeRegion }}
       >
         {this.props.children}
       </CountryContext.Provider>
