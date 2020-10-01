@@ -26,12 +26,19 @@ class CountryContextProvider extends Component {
     });
   }
   // filter the countries according to region
-  changeRegion = (region) =>
-    Axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
-      .then((res) => this.setState({ countries: res.data }))
-      .catch((err) => console.log(err.message));
+  changeRegion = (region) => {
   
+
+
+    if (region) {
+          Axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
+            .then((res) => this.setState({ countries: res.data }))
+            .catch((err) => console.log(err.message));
+      }else{
+        this.loadCountry()
+      }
   
+  }
 
       // filter the countries according to user input 
   filterCountry = (countryName) => {
