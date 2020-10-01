@@ -6,7 +6,7 @@
 }
 .specific h5{
     font-weight: bold;
-    font-family: monospace;
+   
 }
 
 .specific span{
@@ -17,6 +17,10 @@
 }
 .specific__button button{
     padding:15px;
+    width: 100px;
+    box-shadow:5px 5px rgb(228, 228, 228);
+    border: none;
+    background-color: white;
 }
 
 .specific__country_details{
@@ -44,6 +48,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.border{
+    padding: 12px 10px;
+    border:none;
+    box-shadow:5px 5px rgb(228, 228, 228);
+
 }
 @media(min-width:766px){
     .specific__country{
