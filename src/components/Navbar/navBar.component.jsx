@@ -4,11 +4,11 @@ const NavBar = () => {
     return ( 
         <nav >
             <div className="myContainer" id="nav-flex">
-                <div>
-                    <h1 >where in the world?</h1>
+                <div >
+                    <h1 className='nav__header'>where in the world?</h1>
                 </div>
                 <div>
-                    <h1>Dark Mode</h1>
+                    <h1 className='nav__header'>Dark Mode</h1>
                 </div>
             </div>
         </nav>

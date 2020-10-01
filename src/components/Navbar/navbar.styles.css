@@ -11,8 +11,8 @@ nav{
     
 }
 
-h1{
-    font-size:1.5em;
+.nav__header{
+    font-size:1em;
 }
 #nav-flex{
     display:flex;
