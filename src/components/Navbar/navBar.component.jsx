@@ -3,7 +3,7 @@ import '../Navbar/navbar.styles.css'
 const NavBar = () => {
     return ( 
         <nav >
-            <div className="myContainer" id="nav-flex">
+            <div className="container" id="nav-flex">
                 <div >
                     <h1 className='nav__header'>where in the world?</h1>
                 </div>
