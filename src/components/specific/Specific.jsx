@@ -40,7 +40,7 @@ class Specific extends React.Component {
       } = this.state.countryInfo;
     return (
       <div className="specific">
-        <div className="specific__container">
+        <div className="container">
           <div className="specific__button">
             <Link to="/">
               <button> back</button>

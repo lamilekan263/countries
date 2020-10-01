@@ -1,11 +1,8 @@
-.specific__container{
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
 
-}
 .specific h5{
     font-weight: bold;
+    font-size: 1em;
+    font-family: sans-serif;
    
 }
 
@@ -16,7 +13,7 @@
     margin: 20px 0 ;
 }
 .specific__button button{
-    padding:15px;
+    padding:5px 10px;
     width: 100px;
     box-shadow:5px 5px rgb(228, 228, 228);
     border: none;
@@ -41,19 +38,19 @@
     display: inline-block;
     margin-left: 5px;
 }
-.details__three{
-    margin:25px 0;
-}
+
 .border__container{
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-between;
 }
 .border{
-    padding: 12px 10px;
+    padding: 7px 20px;
     border:none;
     box-shadow:5px 5px rgb(228, 228, 228);
   border: 1px solid #ccc;  
+
 }
 @media(min-width:766px){
     .specific__country{
@@ -63,10 +60,21 @@
         height: max-content;
 
     }
+    .specific__country_flag{
+        width: 45%;
+    }
+    .specific__country_details{
+        width: 45%;
+        margin: 0;
+        padding: 0px 0;
+    }
     .details{
         display: flex;
         height: max-content;
         justify-content: space-between;
         align-items: flex-start;
     }
+    .details__container{
+    margin: 5px 0;
+}
 }
