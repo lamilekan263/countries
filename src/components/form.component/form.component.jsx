@@ -9,16 +9,13 @@ import './form.styles.css';
 
 
 const MyForm =props =>{
-
-
-    
    
     return (
       <div className="container-fluid">
         <div className="myForm">
-          <div>
+          
             <Input   />
-          </div>
+          
           <SelectDropDownByRegion />
         </div>
       </div>
