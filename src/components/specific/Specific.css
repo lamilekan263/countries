@@ -53,7 +53,7 @@
     padding: 12px 10px;
     border:none;
     box-shadow:5px 5px rgb(228, 228, 228);
-
+  border: 1px solid #ccc;  
 }
 @media(min-width:766px){
     .specific__country{

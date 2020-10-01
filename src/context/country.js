@@ -14,11 +14,17 @@ class CountryContextProvider extends Component {
 
   // initial component mounting
   componentDidMount() {
+    this.loadCountry()
+  }
+
+
+  // Load the countries on initial mounting
+
+  loadCountry = () => {
     Axios.get("https://restcountries.eu/rest/v2/all").then((res) => {
       this.setState({ countries: res.data });
     });
   }
-
   // filter the countries according to region
   changeRegion = (region) =>
     Axios.get(`https://restcountries.eu/rest/v2/region/${region}`)
@@ -29,11 +35,7 @@ class CountryContextProvider extends Component {
 
       // filter the countries according to user input 
   filterCountry = (countryName) => {
-    // const filter = countryName[0]
-    //   .toUpperCase()
-    //   .countryName.slice(1)
-    //   .toLowerCase();
-    //   console.log(filter)
+    
     if (countryName) {
       const filter = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
       this.setState({ filteredCountry: filter });
@@ -45,10 +47,11 @@ class CountryContextProvider extends Component {
       });
 
     }else{
-      return;
+      this.setState({ countries: [] });
+      this.loadCountry();
     }
     
-    // const filteredCountries = countries.filter(country => country.name.toLowerCase().includes(searchValue.toLowerCase()))
+   
 
   };
 

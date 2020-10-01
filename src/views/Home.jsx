@@ -4,7 +4,7 @@ import CountryList from '../components/country-list/country-list.component';
 
 function Home() {
     return (
-      <div>
+      <div className='container'>
         <MyForm  />
         <CountryList  />
       </div>

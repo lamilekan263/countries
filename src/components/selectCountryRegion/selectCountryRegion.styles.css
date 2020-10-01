@@ -1,16 +1,22 @@
 .selectButton{
     width: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
+     box-sizing: border-box; 
 }
 select{
     width: 100%;
-    padding: 12px;
-    height:70px;
+    padding:  0px 40px;  
     border: none;
     background-color: #fff;
+     border: 1px solid #ccc;  
     box-shadow:5px 5px rgb(228, 228, 228);
     /* box-shadow:5px 5px 5px 5px rgb(236, 236, 236, 236); */
+    height:40px;
 }
-option{
-    position: relative;
+
+
+@media(min-width:740px){
+    .selectButton{
+        width: 50%;
+    }
 }

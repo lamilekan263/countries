@@ -22,7 +22,8 @@ img{
     color:hsl(0, 0%, 52%);
     border-radius: 15px;
     width:100%;
-    margin:20px 0px;
+    margin:10px 0px;
+    height: max-content;
 }
 
 @media(min-width:750px){
@@ -33,6 +34,6 @@ img{
 
 @media(min-width:1000px){
     .country-card{
-        width:370px;
+        width:300px;
     }
 }

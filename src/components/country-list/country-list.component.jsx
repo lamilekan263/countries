@@ -17,7 +17,7 @@ const CountryList = () => {
     )
   }else {
     return (
-      <div className="country-list container-fluid">
+      <div className="country-list ">
          <div className="flex-country">
            {}
            {countries.map((country, index) => (

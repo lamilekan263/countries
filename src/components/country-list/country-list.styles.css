@@ -1,7 +1,7 @@
 
 .country-list{
-    padding:0% 7%;
-    margin:10px 0 20px;
+   
+    margin:10px 0;
    
     
 }
@@ -9,6 +9,6 @@
     .flex-country{
         display:flex;
         flex-wrap:wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }

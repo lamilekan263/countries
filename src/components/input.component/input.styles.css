@@ -1,12 +1,25 @@
+.fontuser{
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box; 
+}
 input{
     width:100%;
     border:none;
     box-shadow:5px 5px rgb(228, 228, 228);
     padding: 12px 40px;   
-    display: inline-block;  
     border: 1px solid #ccc;  
-    box-sizing: border-box; 
+    height:40px;
+
 }
+
+@media(min-width:740px){
+    .fontuser{
+        width: 50%;
+        margin-right: 5px;
+    }
+}
+
 input :active{  
     border: 1px solid red; 
     
