@@ -17,10 +17,9 @@ img{
     margin-bottom:0.7rem;
 }
 .country-card{
-    background-color:hsl(0, 0%, 98%);
-    box-shadow:5px 5px rgb(236, 234, 234);
+    
+    /* box-shadow:5px 5px rgb(236, 234, 234); */
     color:hsl(0, 0%, 52%);
-    border-radius: 15px;
     width:100%;
     margin:10px 0px;
     height: max-content;

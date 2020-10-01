@@ -56,7 +56,16 @@ useEffect(() => {
       <div className="container">
         <div className="specific__button">
           <Link to="/">
-            <button> back</button>
+            <button
+              style={{
+                background: theme.bg,
+                color: theme.color,
+                boxShadow: theme.shadow,
+              }}
+            >
+              {" "}
+              back
+            </button>
           </Link>
         </div>
         <div className="specific__country">
@@ -123,7 +132,14 @@ useEffect(() => {
                 {borders
                   ? borders.map((border) => {
                       return (
-                        <div className="border">
+                        <div
+                          className="border"
+                          style={{
+                            background: theme.bg,
+                            color: theme.color,
+                            boxShadow: theme.shadow,
+                          }}
+                        >
                           <h5>{border}</h5>
                         </div>
                       );

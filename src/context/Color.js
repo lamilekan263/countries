@@ -13,11 +13,13 @@ class ColorContextProvider extends React.Component{
           isLight: true,
           lightColor: {
             bg: "#ffff",
-            color: 'black'
+            color: "black",
+            shadow: "5px 5px rgb(236, 234, 234)",
           },
           darkColor: {
-              bg: "#2b3945",
-              color: '#ffffff'
+            bg: "#2b3945",
+            color: "#ffffff",
+            shadow: "3px 3px rgb(168, 166, 166)",
           },
         };
     }

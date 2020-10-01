@@ -1,4 +1,9 @@
-
+.specific{
+    padding: 20px 0;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+}
 .specific h5{
     font-weight: bold;
     font-size: 1em;
@@ -10,12 +15,12 @@
     font-weight: lighter;
 }
 .specific__button{
-    margin: 20px 0 ;
+    margin: 10px 0 ;
 }
 .specific__button button{
     padding:5px 10px;
     width: 100px;
-    box-shadow:5px 5px rgb(228, 228, 228);
+
     border: none;
     background-color: white;
 }
@@ -48,7 +53,7 @@
 .border{
     padding: 7px 20px;
     border:none;
-    box-shadow:5px 5px rgb(228, 228, 228);
+ 
   border: 1px solid #ccc;  
 
 }

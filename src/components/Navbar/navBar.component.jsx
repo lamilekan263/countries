@@ -8,7 +8,7 @@ const NavBar = () => {
     const { changeButton, lightColor, darkColor, isLight } = useContext(colorContext);
         const theme = isLight ? lightColor : darkColor;
     return (
-      <nav style={{ background: theme.bg, color: theme.color }}>
+      <nav style={{ background: theme.bg, color: theme.color, boxShadow : theme.shadow}}>
         <div className="container" id="nav-flex">
           <div>
             <h1 className="nav__header">where in the world?</h1>

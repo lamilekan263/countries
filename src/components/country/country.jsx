@@ -9,16 +9,19 @@ const Country = props => {
    );
    const theme = isLight ? lightColor : darkColor;
   return (
-    <div className="card country-card">
+    <div
+      className="card country-card"
+      style={{
+        background: theme.bg,
+        boxShadow: theme.shadow,
+      }}
+    >
       <img
         className="card-img-top"
         src={props.countries.flag}
         alt="the flag "
       ></img>
-      <div
-        className="card-body country-details"
-        style={{ background: theme.bg, color: theme.color }}
-      >
+      <div className="card-body country-details" style = {{ color : theme.color}}>
         <h2 className="card-title">{props.countries.name}</h2>
         <p className="card-text">Population: {props.countries.population}.</p>
         <p className="card-text">Region : {props.countries.region}</p>

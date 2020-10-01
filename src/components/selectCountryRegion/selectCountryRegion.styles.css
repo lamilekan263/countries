@@ -9,7 +9,6 @@ select{
     border: none;
     background-color: #fff;
      border: 1px solid #ccc;  
-    box-shadow:5px 5px rgb(228, 228, 228);
     /* box-shadow:5px 5px 5px 5px rgb(236, 236, 236, 236); */
     height:40px;
 }
